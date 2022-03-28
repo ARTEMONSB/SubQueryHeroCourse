@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+*
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.section2
+{
+	position: absolute;
+	margin-top: -50vh;
+	width: 100%;
+	height: 150vh;
+	overflow: hidden;
+	background: #111;
+	-webkit-box-shadow: 0px 5px 10px -6px rgba(34, 60, 80, 0.6);
+	-moz-box-shadow: 0px 5px 10px -6px rgba(34, 60, 80, 0.6);
+	box-shadow: 0px 5px 10px -6px rgba(34, 60, 80, 0.6);
+}
+.a
+{
+	text-align: center;
+	padding-top: 70px;
+	position: relative;
+	z-index: 11;
+}
+.b
+{
+    font-size: 42px;
+    line-height: 63px;
+    color: #1a202c;
+	padding-top: 40px;
+	margin-top: 40px;
+	font-weight: 600;
+}
+.c
+{
+	width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 496px;
+}
+.d
+{
+	margin-left: 190px;
+	width: 400px;
+	text-align: left;
+	padding-top: 90px;
+	position: relative;
+	font-size: 20px;
+	z-index: 11;
+	float: left;
+}
+.e
+{
+	text-align: right;
+	margin-right: 270px;
+	margin-top: 80px;
+	width: 500px;
+	height: 320;
+	position: relative;
+	z-index: 11;
+	float: right;
+	border-radius: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 7px #666;
+}
+.f
+{
+
+}
+.text
+{
+	position: relative;
+	transform: skewY(345deg) translateY(-200px);
+	animation: colorchange 5s infinite;
+}
+.text h2
+{
+	position: relative;
+	width: 100%;
+	font-size: 8em;
+	color: rgb(255, 255, 255);
+	pointer-events: none;
+	line-height: 1em;
+	white-space: nowrap;
+	text-shadow: calc(var(--x)) 100px 0 rgba(255,255,255,0.1);
+	transform: translateX(calc(0% - var(--x) * var(--i)));
+}
+.text h2 span
+{
+	margin: 0 10px;
+}
+.text h2 span:nth-child(odd)
+{
+	animation: colorchange 3s infinite;
+}
+@keyframes colorchange {
+	0% { color: #4388dd; }
+	50% { color: #ff4581; }
+	100% { color: #4388dd; }
+}
+.text h2 span:nth-child(even)
+{
+	color: transparent;
+	-webkit-text-stroke: 2px #fff;
+}
+.sections
+{
+	width: 100%;
+	height: 100vh;
+	background: rgb(247, 247, 247);
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+}
+.sections1
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(135deg, #4388dd, #ff4581);
+	-webkit-box-shadow: 0px 6px 10px -5px rgba(34, 60, 80, 0.6) inset;
+	-moz-box-shadow: 0px 6px 10px -5px rgba(34, 60, 80, 0.6) inset;
+	box-shadow: 0px 6px 10px -5px rgba(34, 60, 80, 0.6) inset;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 340px;
+	width: 400px;
+	text-align: right;
+	padding-top: 195px;
+	position: relative;
+	float: right;
+
+
+}
+.container .box
+{
+	transform-style: preserve-3d;
+	animation: animate 10s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: perspective(1000px) rotateX(0deg) rotate(10deg);
+	}
+	100%
+	{
+		transform: perspective(1000px) rotateX(360deg) rotate(10deg);
+	}
+}
+.container .box span
+{
+	position: absolute;
+	color: #fff;
+	font-size: 3.5em;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 0 10px;
+	background: linear-gradient(90deg, transparent, rgba(148, 148, 148, 0.5), transparent);
+	line-height: 0.76em;
+	transform-style: preserve-3d;
+	text-shadow: 0 5px 15px rgba(0,0,0,0.25); 
+	transform: translate(-50%,-50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(106px);
+}
+.container .box span i:nth-child(1)
+{
+	font-style: initial;
+	color: #ff4581;
+}
+.container .box span i:nth-child(2)
+{
+	font-style: initial;
+	color: #23b9ff;
+}
+::-webkit-scrollbar {
+	width: 0;
+  }
+.icon 
+{
+	transition-duration: 0.5s;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	border-radius: 15px 15px 15px 15px;
+}
+.icon:hover
+{
+	transition-duration: 0.5s;
+	width: 120px;
+	height: 120px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	border-radius: 20px 20px 20px 20px;
+
+}
+.iconbox
+{
+	background-color: rgb(247, 247, 247);
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	border-radius: 20px 20px 20px 20px;
+}
+.iconleft
+{
+	transition-duration: 0.5s;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	left: 40px;
+	bottom: 40px;
+	border-radius: 15px 15px 15px 15px;
+}
+.iconleft:hover
+{
+	transition-duration: 0.5s;
+	width: 120px;
+	height: 120px;
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+	border-radius: 20px 20px 20px 20px;
+
+}

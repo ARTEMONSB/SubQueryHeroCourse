@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SubQuery Hero Course</title>
+    <link rel="stylesheet" href="../SubQuery/dist/css/animsition.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="../SubQuery/dist/js/animsition.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section class="section2">
+      <div class="text">
+        <h2 style="--i:0.5"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:1.5"><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span></h2>
+        <h2 style="--i:2.5"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:2.25"><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span></h2>
+        <h2 style="--i:1.25"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:0.75"><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span></h2>
+        <h2 style="--i:3"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:0.35"><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span></h2>
+        <h2 style="--i:2.35"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:0.5"><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span></h2>
+        <h2 style="--i:1.5"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:2.5"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:2.25"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:1.25"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:0.75"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:3"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:0.35"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+        <h2 style="--i:2.35"><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span><span>SubQuery</span><span>Hero Course</span></h2>
+      </div>
+    </section>
+    <div class="iconbox" class="animsition">
+      <a href="page2.html" class="animsition-link"><img class="icon" src="photos/rightarrowblack.jpg" alt=""></a>
+    </div>
+    <script>
+      $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+    </script>
+    <script>
+      const position = document.documentElement;
+      position.addEventListener("mousemove", e => {
+        position.style.setProperty('--x', e.clientX + 'px');
+      })
+    </script>
+  </body>
+</html>
